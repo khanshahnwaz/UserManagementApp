@@ -81,22 +81,17 @@ const[newData,setNewData]=useState();
 
 
 useEffect(()=>{
-      // console.log("Editform submitted and new data",newData)
-
-    //  editUserData();
-  // console.log("data without updation ",context.user)
   if(newData){
     const newUsers= context.user.map((item)=>{
       // console.log("hello hello")
-      if((item.name==prop.name) && (item.email==prop.email) && (item.number==prop.number)){
+      if((item.name===prop.name) && (item.email===prop.email) && (item.number===prop.number)){
         console.log("matched.",item)
       return newData;
     }else return item;
   })
   context.setUser(newUsers)
 }
-// else console.log("New data is ",newData)
-    // console.log("Data updataion.")
+
 },[newData])
 
 

@@ -10,7 +10,7 @@ const DeleteUser=(prop)=> {
   const deleteUser=()=>{
     // 
        console.log("Deleting user ",context.user)
-       const updatedUsers=context.user.filter((item)=>(item.name!=prop.name) || (item.email!=prop.email) || (item.number!=prop.number))
+       const updatedUsers=context.user.filter((item)=>(item.name!==prop.name) || (item.email!==prop.email) || (item.number!==prop.number))
       //  context.setUser(items=>{items.filter((item,i)=>i!=0 )})
       context.setUser(updatedUsers);
        console.log("Deleted and left",context.user)

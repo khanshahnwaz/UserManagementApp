@@ -3,7 +3,6 @@
 
 import { Navbar } from 'flowbite-react';
 import CreateUser from '../Forms/CreateUser';
-import { Link } from 'react-router-dom';
 export default function NavbarWithCTAButton() {
   return (
     <Navbar
