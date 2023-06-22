@@ -10,16 +10,18 @@ function App() {
   return (
     <div className="App">
       <UserState>
-      <Router>
+
+        <Navbar/>
+        <User/>
+      {/* <Router basename={window.}>
      <Navbar/>
      <Routes>
-     {/* <Route path='/' element={<CreateUser/>}/> */}
-       <Route path='/' element={<User/>}/> 
-      <Route path='/createUser' element={<CreateUser/>}/>
-      <Route path='/editUser' element={<><EditUser/><User/></>}/> 
+      <Route path='/' element={<CreateUser/>}/> 
+       {/* <Route path='' element={<User/>}/>  
+      
     
      </Routes>
-     </Router>
+     </Router> */}
      </UserState>
     </div>
 

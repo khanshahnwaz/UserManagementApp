@@ -8,11 +8,12 @@ const User = () => {
   const users= context.user.map((item,i)=>{
     return <Card key={i} name={item.name} number={item.number} email={item.email}/>
   })
+  console.log("I am in user component and users are ",users)
   // const ele=users?1:0
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 gap-4 relative top-12 z-20">
     
-      {users?users:null}
+    {users}
 
     </div>
   )

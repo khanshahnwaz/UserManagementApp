@@ -4,6 +4,7 @@ import DeleteModal from '../Modals/DeleteUser'
 import EditUser from '../Modals/EditUser'
 import user1 from '../Assets/user1.png'
 const Card = (props) => {
+  console.log("I am in card component. ")
   return (
     
 <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-auto">
